@@ -141,7 +141,7 @@ async function insertData(collection, data) {
 }
 
 // Main Function
-const port = process.argv[2];
+let port = process.argv[2];
 
 async function main() {
     num = 1000;
