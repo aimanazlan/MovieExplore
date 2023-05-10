@@ -1,0 +1,38 @@
+<!--search lookup page-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie Search</title>
+    <link rel="stylesheet" href="searchstyle.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+
+<body>
+    <h1>Search Results</h1>
+
+    <table border="2">
+    <thead>
+        <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>IMDB ID</th>
+        <th>Poster</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% tableData.forEach(movie => { %>
+        <tr>
+            <td><img src="<%= movie.poster %>"></td>
+            <td><%= movie.title %></td>
+            <td><%= movie.year %></td>
+            <td><%= movie.imdb %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+    </table>
+    <div id="class"><a href="http://localhost:<%- port %>">HOME</a></div>
+</body>
+
+</html>

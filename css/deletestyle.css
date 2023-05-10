@@ -1,0 +1,17 @@
+html {
+    font-size:x-large;
+}
+
+body {
+    text-align: center;
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    font-family:'Ubunutu', sans-serif;
+    border: groove 5px rebeccapurple;
+}
+
+#thumbsup {
+    border-image: auto;
+    size-adjust: 100rem;
+}

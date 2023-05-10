@@ -1,0 +1,29 @@
+html {
+    font-size: large;
+}
+
+body {
+    background-image: url("filmwallpaper.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    font-family: "Braah One", sans-serif;
+}
+
+#list {
+    font-size: medium;
+    text-align: center;
+    text-align: center;
+    border: groove 6px lightseagreen;
+    padding: 14px 28px;
+}
+
+#title {
+    font-size: larger;
+    text-align: center;
+}
+
+#main {
+    font-size: medium;
+    text-align: center;
+    border: groove 12px blue;
+}

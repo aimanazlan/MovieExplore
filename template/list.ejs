@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie List</title>
+    <link rel="stylesheet" href="searchstyle.css"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+
+<body>
+	<h1><b>MOVIES THAT WE HAVE LOOKED UP</b></h1>
+	<form action="http://localhost:<%- port %>/movieList" method="get">
+		<%- table %>
+	</form>
+	<hr>
+	<a href="http://localhost:<%- port %>">HOME</a>
+</body>
+</html>

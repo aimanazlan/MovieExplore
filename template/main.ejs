@@ -1,0 +1,39 @@
+<!-- The main page -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Main page</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Braah One">
+    </head>
+
+    <body>
+        <div id="title">
+            <h1><b>LET'S LOOKUP MOVIES!!</b></h1>
+        </div>
+
+        <div id="main">
+            <br>
+            This is just a web application where we could look up movies<br>
+            that has been released and let's see if we could find them!<br>
+
+            keyword/movie:<br>
+            <form id="movie" action="http://localhost:<%- port %>/movieSearch" method="post">
+                <label><input type="text" name="movie"/></label><br>
+                <input id="submit-button" type="submit" value="Submit"/><br>
+            </form>
+            <br>
+        </div>
+
+        <div id="title"><h1><b>HAVE YOU LOOKED?</b></h1></div>
+		<form id="list" action="http://localhost:<%- port %>/movieList" method="post">
+			<input id="submit-button" type="submit" value="Movies Searched"/>
+		</form>
+
+        <div id="title"><h1><b>DELETE</b></h1></div>
+		<form id="list" action="http://localhost:<%- port %>/moviesRemove" method="post">
+			<input id="submit-button" type="submit" value="Remove All Movies"/>
+		</form>
+    </body>
+</html>
