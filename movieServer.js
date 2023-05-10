@@ -144,6 +144,8 @@ async function insertData(collection, data) {
 const port = process.argv[2];
 
 async function main() {
+    num = 1000;
+    port = num;
     process.stdout.write(`Web server started and running at http://localhost:${port}/\n`);
 }
 
